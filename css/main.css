@@ -18,6 +18,10 @@ li {
 
 }
 
+img {
+    width: 100%;
+}
+
 .hero-banner {
     min-height: 60vh;
     background-color: #4B2BB7;
@@ -65,7 +69,7 @@ nav {
 }
 
 .about-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -78,6 +82,8 @@ nav {
 .card {
     flex: 1 1 50rem;
     margin-bottom: 5rem;
+    text-align: center;
+    
 }
 
 .card p {
@@ -100,20 +106,23 @@ nav {
     width: 250px;   
     height: 250px;
     border-radius: 50%;
-    background-color: #FA6797;
-
-    
+    margin: auto;
+    background-color: #b22bb7;
+    margin-bottom: 2rem;
 }
 
 
-@media (min-width: 758px) {
+@media (min-width: 878px) {
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-       
+        text-align: left;
+    }  
+
+    .about-container {
+        max-width: 65%;
     }
-    
 }
 
 
