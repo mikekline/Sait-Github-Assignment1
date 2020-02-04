@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;   
+    font-family: 'Open Sans', sans-serif; 
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -22,12 +24,14 @@ img {
     width: 100%;
 }
 
+
+/************universal header with hero section and nav links***************/
+
 .hero-banner {
     min-height: 60vh;
     background-color: #4B2BB7;
     color: #fff;
-    margin-bottom: 10rem;
-    
+    margin-bottom: 10rem; 
 }
 
 nav {
@@ -37,8 +41,7 @@ nav {
     text-align: center;
     align-items: center;
     max-width: 90%;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 .logo-container {
@@ -57,6 +60,7 @@ nav {
 
 .hero-banner-title {
     margin: 3rem;
+    margin-left: 12em;
 }
 
 .hero-banner-title h4, .card h4 {
@@ -68,6 +72,50 @@ nav {
     font-weight: bolder;
 }
 
+
+/************Home page***************/
+
+.moreInfo {
+    max-width: 650px;
+    margin: 5em auto;
+}
+
+.box {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tracker-image {
+    justify-self:center;
+    height:250px;
+    width:250px;
+    background-color: #b22bb7;
+}
+
+.tracker-image1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+}
+
+.tracker-image2 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+}
+
+.tracker-image3 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+}
+
+
+
+
+/************About page***************/
+
 .about-container {
     max-width: 80%;
     margin: auto;
@@ -75,15 +123,13 @@ nav {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .card {
     flex: 1 1 50rem;
     margin-bottom: 5rem;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .card p {
@@ -97,7 +143,6 @@ nav {
     border-radius: 20px;
 }
 
-
 .card h4 {
     margin-bottom: 0.8rem;
 }
@@ -109,6 +154,27 @@ nav {
     margin: auto;
     background-color: #b22bb7;
     margin-bottom: 2rem;
+}
+
+/******************blog page*********************/
+
+
+
+
+
+
+
+
+
+/******************blog page end*********************/
+
+/************universal footer***************/
+
+.footer {
+    margin-top:200px;
+    padding: 3em 0em 3em 12em;
+    background-color: #4B2BB7;
+    color: #fff;
 }
 
 
@@ -124,5 +190,3 @@ nav {
         max-width: 65%;
     }
 }
-
-
