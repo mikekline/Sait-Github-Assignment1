@@ -158,7 +158,28 @@ nav {
 
 /******************blog page*********************/
 
-
+main{
+    max-width:90ch;
+    width:60vw;
+    min-width:40ch;
+    margin:3rem auto;
+  }
+  
+  .blog{
+    background-color:#b22bb7;
+    height:18em;
+    width:100%;
+    border-radius: .8rem;
+    margin: 3rem 0;
+    }
+  
+    main h3{
+      margin: 2em 0 0 0;
+      }
+    
+    main h4{
+    color: #b22bb7;
+  }
 
 
 
